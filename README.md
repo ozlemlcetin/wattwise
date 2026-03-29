@@ -2,6 +2,8 @@
 
 AI Coach for Utility Savings · Operator dashboard and public website · MVP stage
 
+**Live demo:** [https://wattwise-tau.vercel.app](https://wattwise-tau.vercel.app)
+
 ---
 
 ## Overview
@@ -147,7 +149,16 @@ Everything in this repository uses local mock data. There is no backend, no real
 
 ## Deployment
 
-The app is fully static and can be deployed to Vercel, Netlify, or any Node.js host. Run `npm run build` to generate an optimised production build.
+The app is deployed on **Vercel** and accessible at:
+
+**[https://wattwise-tau.vercel.app](https://wattwise-tau.vercel.app)**
+
+To run a production build locally:
+
+```bash
+npm run build
+npm start
+```
 
 ---
 
