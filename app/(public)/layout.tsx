@@ -1,14 +1,15 @@
 import PublicNav from "@/components/layout/PublicNav";
 import Footer from "@/components/layout/Footer";
-import HomePage from "@/components/pages/HomePage";
 
-export default function RootPage() {
+export default function PublicLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <PublicNav />
-      <main>
-        <HomePage />
-      </main>
+      <main className="flex-1">{children}</main>
       <Footer />
     </>
   );
