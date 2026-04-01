@@ -42,7 +42,7 @@ export default function LoginPage() {
           </p>
 
           {/* Demo notice */}
-          <div className="bg-[#e8f5f1] rounded-lg p-3 mb-6 border border-[#d1fae5]">
+          <div className="bg-[#e0f4f6] rounded-lg p-3 mb-6 border border-[#d1fae5]">
             <p className="text-xs text-[#0f172a] font-medium mb-0.5">Demo mode</p>
             <p className="text-xs text-[#475569]">
               Enter any email and password to access the demo dashboard. No real authentication is required.

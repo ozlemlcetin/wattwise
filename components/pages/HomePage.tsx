@@ -153,7 +153,7 @@ export default function HomePage() {
       <section className="relative pt-28 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#f0fdf9] via-white to-[#f0f9ff] -z-10" />
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#e8f5f1]/40 to-transparent -z-10" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#e0f4f6]/40 to-transparent -z-10" />
 
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
@@ -287,7 +287,7 @@ export default function HomePage() {
               },
             ].map((item) => (
               <div key={item.title} className="bg-[#f8fafc] rounded-2xl p-8">
-                <div className="w-12 h-12 bg-[#e8f5f1] rounded-xl flex items-center justify-center mb-6">
+                <div className="w-12 h-12 bg-[#e0f4f6] rounded-xl flex items-center justify-center mb-6">
                   <item.icon className="w-6 h-6 text-[#028090]" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#0f172a] mb-3">{item.title}</h3>
@@ -375,7 +375,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {useCases.map((uc) => (
               <div key={uc.label} className="bg-white rounded-2xl border border-[#e2e8f0] p-8 hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-[#e8f5f1] rounded-xl flex items-center justify-center mb-6">
+                <div className="w-12 h-12 bg-[#e0f4f6] rounded-xl flex items-center justify-center mb-6">
                   <uc.icon className="w-6 h-6 text-[#028090]" />
                 </div>
                 <h3 className="font-semibold text-[#0f172a] text-lg mb-3">{uc.label}</h3>
@@ -425,7 +425,7 @@ export default function HomePage() {
                 ))}
               </ul>
               <Link href="/product">
-                <Button className="bg-[#028090] hover:bg-[#0f5c47]">
+                <Button className="bg-[#028090] hover:bg-[#016070]">
                   See Reports Module
                   <ArrowRight className="w-4 h-4" />
                 </Button>

@@ -53,7 +53,7 @@ export default function PublicNav() {
                 className={cn(
                   "px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                   pathname === link.href
-                    ? "bg-[#e8f5f1] text-[#028090]"
+                    ? "bg-[#e0f4f6] text-[#028090]"
                     : "text-[#475569] hover:text-[#0f172a] hover:bg-[#f8fafc]"
                 )}
               >
@@ -96,7 +96,7 @@ export default function PublicNav() {
               className={cn(
                 "block px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                 pathname === link.href
-                  ? "bg-[#e8f5f1] text-[#028090]"
+                  ? "bg-[#e0f4f6] text-[#028090]"
                   : "text-[#475569] hover:text-[#0f172a] hover:bg-[#f8fafc]"
               )}
             >

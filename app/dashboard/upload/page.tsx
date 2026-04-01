@@ -69,7 +69,7 @@ export default function UploadPage() {
         {/* Upload zone */}
         <div className="lg:col-span-2 space-y-5">
           {/* Instructions banner */}
-          <div className="bg-[#e8f5f1] border border-[#d1fae5] rounded-xl p-4 flex gap-3">
+          <div className="bg-[#e0f4f6] border border-[#d1fae5] rounded-xl p-4 flex gap-3">
             <Info className="w-5 h-5 text-[#028090] shrink-0 mt-0.5" />
             <div>
               <p className="text-sm font-medium text-[#0f172a] mb-1">No hardware required</p>
@@ -125,7 +125,7 @@ export default function UploadPage() {
                 <div
                   className={`border-2 border-dashed rounded-xl p-12 text-center transition-colors ${
                     state === "dragging"
-                      ? "border-[#028090] bg-[#e8f5f1]"
+                      ? "border-[#028090] bg-[#e0f4f6]"
                       : "border-[#e2e8f0] hover:border-[#028090] hover:bg-[#f0fdf9]"
                   }`}
                   onDragOver={(e) => { e.preventDefault(); setState("dragging"); }}
@@ -153,7 +153,7 @@ export default function UploadPage() {
                 </div>
               ) : state === "uploading" ? (
                 <div className="p-12 text-center">
-                  <div className="w-14 h-14 bg-[#e8f5f1] rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                  <div className="w-14 h-14 bg-[#e0f4f6] rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
                     <Upload className="w-6 h-6 text-[#028090]" />
                   </div>
                   <p className="font-medium text-[#0f172a] mb-2">Processing upload...</p>

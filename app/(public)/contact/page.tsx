@@ -68,7 +68,7 @@ export default function ContactPage() {
           <div className="lg:col-span-3">
             {submitted ? (
               <div className="text-center py-16">
-                <div className="w-16 h-16 bg-[#e8f5f1] rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-[#e0f4f6] rounded-full flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="w-8 h-8 text-[#028090]" />
                 </div>
                 <h2 className="text-2xl font-bold text-[#0f172a] mb-4">
@@ -221,7 +221,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="bg-[#e8f5f1] rounded-xl p-6">
+            <div className="bg-[#e0f4f6] rounded-xl p-6">
               <p className="text-sm font-medium text-[#0f172a] mb-2">
                 Not ready to talk yet?
               </p>

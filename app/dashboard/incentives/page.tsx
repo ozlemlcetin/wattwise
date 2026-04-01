@@ -64,7 +64,7 @@ export default function IncentivesPage() {
             ].map((s) => (
               <Card key={s.label}>
                 <CardContent className="p-4 flex items-center gap-3">
-                  <div className="w-9 h-9 bg-[#e8f5f1] rounded-lg flex items-center justify-center shrink-0">
+                  <div className="w-9 h-9 bg-[#e0f4f6] rounded-lg flex items-center justify-center shrink-0">
                     <s.icon className="w-4 h-4 text-[#028090]" />
                   </div>
                   <div>
@@ -82,7 +82,7 @@ export default function IncentivesPage() {
               <Card key={tier.id} className={i === 2 ? "ring-1 ring-[#028090]" : ""}>
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
-                    <div className="w-10 h-10 bg-[#e8f5f1] rounded-xl flex items-center justify-center">
+                    <div className="w-10 h-10 bg-[#e0f4f6] rounded-xl flex items-center justify-center">
                       <Gift className="w-5 h-5 text-[#028090]" />
                     </div>
                     {i === 2 && <Badge variant="success" className="text-xs">Top tier</Badge>}
@@ -161,7 +161,7 @@ export default function IncentivesPage() {
 
       {activeTab === "coach" && (
         <div className="space-y-6">
-          <div className="bg-[#e8f5f1] border border-[#d1fae5] rounded-xl p-4 flex gap-3">
+          <div className="bg-[#e0f4f6] border border-[#d1fae5] rounded-xl p-4 flex gap-3">
             <MessageSquare className="w-5 h-5 text-[#028090] shrink-0 mt-0.5" />
             <div>
               <p className="text-sm font-medium text-[#0f172a] mb-1">CoachAI — operator configuration view</p>
@@ -259,7 +259,7 @@ export default function IncentivesPage() {
                   },
                 ].map((theme) => (
                   <div key={theme.title} className="bg-[#f8fafc] rounded-xl p-4">
-                    <div className="w-8 h-8 bg-[#e8f5f1] rounded-lg flex items-center justify-center mb-3">
+                    <div className="w-8 h-8 bg-[#e0f4f6] rounded-lg flex items-center justify-center mb-3">
                       <theme.icon className="w-4 h-4 text-[#028090]" />
                     </div>
                     <h4 className="text-sm font-semibold text-[#0f172a] mb-2">{theme.title}</h4>

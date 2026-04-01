@@ -231,7 +231,7 @@ export default function BaselinePage() {
               </div>
             ))}
           </div>
-          <div className="mt-4 bg-[#e8f5f1] rounded-xl p-4 flex gap-3">
+          <div className="mt-4 bg-[#e0f4f6] rounded-xl p-4 flex gap-3">
             <Info className="w-4 h-4 text-[#028090] shrink-0 mt-0.5" />
             <p className="text-sm text-[#0f172a]">
               <strong>Fairness and dispute reduction:</strong> Because every target is derived from the building's own historical data with explicit adjustments, residents and operators can understand why a target was set — reducing the risk of fairness disputes and improving engagement with savings programmes.
