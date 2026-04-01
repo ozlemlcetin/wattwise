@@ -162,7 +162,7 @@ export default function HomePage() {
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0f172a] leading-tight tracking-tight mb-6">
               Reduce utility waste in shared housing —{" "}
-              <span className="text-[#147a5e]">without installing hardware.</span>
+              <span className="text-[#028090]">without installing hardware.</span>
             </h1>
             <p className="text-lg sm:text-xl text-[#475569] leading-relaxed mb-8 max-w-2xl">
               WattWise helps dormitory and accommodation operators upload existing
@@ -191,7 +191,7 @@ export default function HomePage() {
                   key={item}
                   className="flex items-center gap-1.5 text-sm text-[#475569]"
                 >
-                  <CheckCircle className="w-3.5 h-3.5 text-[#147a5e] shrink-0" />
+                  <CheckCircle className="w-3.5 h-3.5 text-[#028090] shrink-0" />
                   {item}
                 </span>
               ))}
@@ -248,7 +248,7 @@ export default function HomePage() {
               and installation overhead that most accommodation operators cannot
               justify.
             </p>
-            <p className="text-[#147a5e] font-semibold text-lg">
+            <p className="text-[#028090] font-semibold text-lg">
               WattWise solves this from the data operators already have.
             </p>
           </div>
@@ -288,7 +288,7 @@ export default function HomePage() {
             ].map((item) => (
               <div key={item.title} className="bg-[#f8fafc] rounded-2xl p-8">
                 <div className="w-12 h-12 bg-[#e8f5f1] rounded-xl flex items-center justify-center mb-6">
-                  <item.icon className="w-6 h-6 text-[#147a5e]" />
+                  <item.icon className="w-6 h-6 text-[#028090]" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#0f172a] mb-3">{item.title}</h3>
                 <p className="text-[#475569] leading-relaxed">{item.desc}</p>
@@ -344,7 +344,7 @@ export default function HomePage() {
                   <div className="hidden md:block absolute top-6 left-full w-full h-px bg-[#e2e8f0] -translate-y-0.5 z-0" />
                 )}
                 <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-full bg-[#147a5e] text-white flex items-center justify-center font-bold text-sm mb-4">
+                  <div className="w-12 h-12 rounded-full bg-[#028090] text-white flex items-center justify-center font-bold text-sm mb-4">
                     {step.num}
                   </div>
                   <h4 className="font-semibold text-[#0f172a] text-sm mb-2">{step.title}</h4>
@@ -376,7 +376,7 @@ export default function HomePage() {
             {useCases.map((uc) => (
               <div key={uc.label} className="bg-white rounded-2xl border border-[#e2e8f0] p-8 hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 bg-[#e8f5f1] rounded-xl flex items-center justify-center mb-6">
-                  <uc.icon className="w-6 h-6 text-[#147a5e]" />
+                  <uc.icon className="w-6 h-6 text-[#028090]" />
                 </div>
                 <h3 className="font-semibold text-[#0f172a] text-lg mb-3">{uc.label}</h3>
                 <p className="text-[#475569] text-sm leading-relaxed">{uc.desc}</p>
@@ -419,13 +419,13 @@ export default function HomePage() {
                   "Export-ready PDF and CSV formats",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm text-[#cbd5e1]">
-                    <CheckCircle className="w-4 h-4 text-[#147a5e] shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-[#028090] shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
               <Link href="/product">
-                <Button className="bg-[#147a5e] hover:bg-[#0f5c47]">
+                <Button className="bg-[#028090] hover:bg-[#0f5c47]">
                   See Reports Module
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -516,7 +516,7 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#147a5e]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#028090]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Ready to reduce utility waste in your buildings?
@@ -529,7 +529,7 @@ export default function HomePage() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-white text-[#147a5e] hover:bg-[#f0fdf9] w-full sm:w-auto"
+                className="bg-white text-[#028090] hover:bg-[#f0fdf9] w-full sm:w-auto"
               >
                 Book a Demo
                 <ArrowRight className="w-4 h-4" />

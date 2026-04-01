@@ -29,7 +29,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-[#147a5e] rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-[#028090] rounded-lg flex items-center justify-center">
                 <Zap className="w-4 h-4 text-white" />
               </div>
               <span className="text-lg font-bold">WattWise</span>
@@ -70,8 +70,8 @@ export default function Footer() {
             comparable pilot data.
           </p>
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 text-xs text-[#147a5e] font-medium">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#147a5e] inline-block"></span>
+            <span className="inline-flex items-center gap-1.5 text-xs text-[#028090] font-medium">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#028090] inline-block"></span>
               Hardware-free deployment
             </span>
           </div>

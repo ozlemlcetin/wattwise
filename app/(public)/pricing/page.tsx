@@ -111,7 +111,7 @@ export default function PricingPage() {
               key={plan.name}
               className={`relative rounded-2xl border p-8 flex flex-col ${
                 plan.badge
-                  ? "border-[#147a5e] shadow-lg ring-1 ring-[#147a5e]/20"
+                  ? "border-[#028090] shadow-lg ring-1 ring-[#028090]/20"
                   : "border-[#e2e8f0]"
               }`}
             >
@@ -132,7 +132,7 @@ export default function PricingPage() {
               <ul className="space-y-2.5 mb-8 flex-1">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-center gap-2.5 text-sm text-[#475569]">
-                    <CheckCircle className="w-4 h-4 text-[#147a5e] shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-[#028090] shrink-0" />
                     {f}
                   </li>
                 ))}
@@ -176,7 +176,7 @@ export default function PricingPage() {
             <div className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-[#0f172a] mb-2">
-                  Number of buildings: <span className="text-[#147a5e] font-bold">{buildings}</span>
+                  Number of buildings: <span className="text-[#028090] font-bold">{buildings}</span>
                 </label>
                 <input
                   type="range"
@@ -184,12 +184,12 @@ export default function PricingPage() {
                   max={20}
                   value={buildings}
                   onChange={(e) => setBuildings(Number(e.target.value))}
-                  className="w-full accent-[#147a5e]"
+                  className="w-full accent-[#028090]"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-[#0f172a] mb-2">
-                  Total units / rooms: <span className="text-[#147a5e] font-bold">{units.toLocaleString()}</span>
+                  Total units / rooms: <span className="text-[#028090] font-bold">{units.toLocaleString()}</span>
                 </label>
                 <input
                   type="range"
@@ -198,12 +198,12 @@ export default function PricingPage() {
                   step={10}
                   value={units}
                   onChange={(e) => setUnits(Number(e.target.value))}
-                  className="w-full accent-[#147a5e]"
+                  className="w-full accent-[#028090]"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-[#0f172a] mb-2">
-                  Annual utility spend: <span className="text-[#147a5e] font-bold">{spend.toLocaleString()} TL</span>
+                  Annual utility spend: <span className="text-[#028090] font-bold">{spend.toLocaleString()} TL</span>
                 </label>
                 <input
                   type="range"
@@ -212,7 +212,7 @@ export default function PricingPage() {
                   step={5000}
                   value={spend}
                   onChange={(e) => setSpend(Number(e.target.value))}
-                  className="w-full accent-[#147a5e]"
+                  className="w-full accent-[#028090]"
                 />
               </div>
 

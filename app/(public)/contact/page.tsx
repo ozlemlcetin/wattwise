@@ -69,7 +69,7 @@ export default function ContactPage() {
             {submitted ? (
               <div className="text-center py-16">
                 <div className="w-16 h-16 bg-[#e8f5f1] rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="w-8 h-8 text-[#147a5e]" />
+                  <CheckCircle className="w-8 h-8 text-[#028090]" />
                 </div>
                 <h2 className="text-2xl font-bold text-[#0f172a] mb-4">
                   Thanks — we'll be in touch
@@ -195,7 +195,7 @@ export default function ContactPage() {
               <div className="space-y-5">
                 {nextSteps.map((step) => (
                   <div key={step.num} className="flex gap-4">
-                    <div className="w-7 h-7 rounded-full bg-[#147a5e] text-white flex items-center justify-center text-xs font-bold shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-[#028090] text-white flex items-center justify-center text-xs font-bold shrink-0">
                       {step.num}
                     </div>
                     <div>
@@ -211,11 +211,11 @@ export default function ContactPage() {
               <h4 className="font-semibold text-[#0f172a] mb-4">Alternative contact</h4>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-sm text-[#475569]">
-                  <Mail className="w-4 h-4 text-[#147a5e]" />
+                  <Mail className="w-4 h-4 text-[#028090]" />
                   hello@wattwise.app
                 </div>
                 <div className="flex items-center gap-3 text-sm text-[#475569]">
-                  <Phone className="w-4 h-4 text-[#147a5e]" />
+                  <Phone className="w-4 h-4 text-[#028090]" />
                   Available on request after initial contact
                 </div>
               </div>

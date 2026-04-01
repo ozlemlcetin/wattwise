@@ -38,7 +38,7 @@ export default function PublicNav() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-[#147a5e] rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-[#028090] rounded-lg flex items-center justify-center">
               <Zap className="w-4 h-4 text-white" />
             </div>
             <span className="text-lg font-bold text-[#0f172a]">WattWise</span>
@@ -53,7 +53,7 @@ export default function PublicNav() {
                 className={cn(
                   "px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                   pathname === link.href
-                    ? "bg-[#e8f5f1] text-[#147a5e]"
+                    ? "bg-[#e8f5f1] text-[#028090]"
                     : "text-[#475569] hover:text-[#0f172a] hover:bg-[#f8fafc]"
                 )}
               >
@@ -96,7 +96,7 @@ export default function PublicNav() {
               className={cn(
                 "block px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                 pathname === link.href
-                  ? "bg-[#e8f5f1] text-[#147a5e]"
+                  ? "bg-[#e8f5f1] text-[#028090]"
                   : "text-[#475569] hover:text-[#0f172a] hover:bg-[#f8fafc]"
               )}
             >

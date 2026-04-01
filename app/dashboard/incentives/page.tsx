@@ -43,7 +43,7 @@ export default function IncentivesPage() {
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-2.5 text-sm font-medium border-b-2 transition-colors -mb-px ${
               activeTab === tab
-                ? "border-[#147a5e] text-[#147a5e]"
+                ? "border-[#028090] text-[#028090]"
                 : "border-transparent text-[#64748b] hover:text-[#0f172a]"
             }`}
           >
@@ -65,7 +65,7 @@ export default function IncentivesPage() {
               <Card key={s.label}>
                 <CardContent className="p-4 flex items-center gap-3">
                   <div className="w-9 h-9 bg-[#e8f5f1] rounded-lg flex items-center justify-center shrink-0">
-                    <s.icon className="w-4 h-4 text-[#147a5e]" />
+                    <s.icon className="w-4 h-4 text-[#028090]" />
                   </div>
                   <div>
                     <p className="text-xl font-bold text-[#0f172a]">{s.value}</p>
@@ -79,16 +79,16 @@ export default function IncentivesPage() {
           {/* Tier cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {incentiveTiers.map((tier, i) => (
-              <Card key={tier.id} className={i === 2 ? "ring-1 ring-[#147a5e]" : ""}>
+              <Card key={tier.id} className={i === 2 ? "ring-1 ring-[#028090]" : ""}>
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="w-10 h-10 bg-[#e8f5f1] rounded-xl flex items-center justify-center">
-                      <Gift className="w-5 h-5 text-[#147a5e]" />
+                      <Gift className="w-5 h-5 text-[#028090]" />
                     </div>
                     {i === 2 && <Badge variant="success" className="text-xs">Top tier</Badge>}
                   </div>
                   <h3 className="font-bold text-[#0f172a] text-lg mb-1">{tier.name}</h3>
-                  <p className="text-[#147a5e] font-semibold text-sm mb-3">
+                  <p className="text-[#028090] font-semibold text-sm mb-3">
                     ≥{tier.threshold}% below monthly baseline
                   </p>
                   <div className="bg-[#f8fafc] rounded-lg p-3 mb-4">
@@ -104,7 +104,7 @@ export default function IncentivesPage() {
                   </div>
                   <div className="w-full h-1.5 bg-[#e2e8f0] rounded-full mt-2 overflow-hidden">
                     <div
-                      className="h-full bg-[#147a5e] rounded-full"
+                      className="h-full bg-[#028090] rounded-full"
                       style={{ width: `${(tier.activeCount / tier.totalEligible) * 100}%` }}
                     />
                   </div>
@@ -127,7 +127,7 @@ export default function IncentivesPage() {
                     <XAxis type="number" tick={{ fontSize: 11, fill: "#94a3b8" }} />
                     <YAxis dataKey="tier" type="category" tick={{ fontSize: 11, fill: "#64748b" }} width={140} />
                     <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8 }} />
-                    <Bar dataKey="eligible" name="Units qualifying" fill="#147a5e" radius={[0, 4, 4, 0]} />
+                    <Bar dataKey="eligible" name="Units qualifying" fill="#028090" radius={[0, 4, 4, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>
@@ -139,13 +139,13 @@ export default function IncentivesPage() {
                 <CardDescription>Issued to Sustainability Champion tier residents</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="border-2 border-[#147a5e] rounded-xl p-5 text-center bg-[#f0fdf9]">
-                  <div className="w-12 h-12 bg-[#147a5e] rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="border-2 border-[#028090] rounded-xl p-5 text-center bg-[#f0fdf9]">
+                  <div className="w-12 h-12 bg-[#028090] rounded-full flex items-center justify-center mx-auto mb-3">
                     <Trophy className="w-6 h-6 text-white" />
                   </div>
                   <p className="text-xs text-[#64748b] mb-1">WattWise Sustainability Certificate</p>
                   <p className="text-lg font-bold text-[#0f172a] mb-1">Sustainability Champion</p>
-                  <p className="text-sm text-[#147a5e] font-medium mb-3">
+                  <p className="text-sm text-[#028090] font-medium mb-3">
                     Sustained ≥15% savings · Academic Year 2025–26
                   </p>
                   <p className="text-xs text-[#64748b]">
@@ -162,7 +162,7 @@ export default function IncentivesPage() {
       {activeTab === "coach" && (
         <div className="space-y-6">
           <div className="bg-[#e8f5f1] border border-[#d1fae5] rounded-xl p-4 flex gap-3">
-            <MessageSquare className="w-5 h-5 text-[#147a5e] shrink-0 mt-0.5" />
+            <MessageSquare className="w-5 h-5 text-[#028090] shrink-0 mt-0.5" />
             <div>
               <p className="text-sm font-medium text-[#0f172a] mb-1">CoachAI — operator configuration view</p>
               <p className="text-sm text-[#475569]">
@@ -260,7 +260,7 @@ export default function IncentivesPage() {
                 ].map((theme) => (
                   <div key={theme.title} className="bg-[#f8fafc] rounded-xl p-4">
                     <div className="w-8 h-8 bg-[#e8f5f1] rounded-lg flex items-center justify-center mb-3">
-                      <theme.icon className="w-4 h-4 text-[#147a5e]" />
+                      <theme.icon className="w-4 h-4 text-[#028090]" />
                     </div>
                     <h4 className="text-sm font-semibold text-[#0f172a] mb-2">{theme.title}</h4>
                     <p className="text-xs text-[#64748b] leading-relaxed mb-3">{theme.desc}</p>

@@ -167,7 +167,7 @@ export default function UseCasesPage() {
       </div>
 
       {/* CTA */}
-      <div className="bg-[#147a5e] py-20 px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#028090] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Which type of operator are you?
@@ -178,7 +178,7 @@ export default function UseCasesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button size="lg" className="bg-white text-[#147a5e] hover:bg-[#f0fdf9]">
+              <Button size="lg" className="bg-white text-[#028090] hover:bg-[#f0fdf9]">
                 Book a Discovery Call <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>

@@ -106,7 +106,7 @@ export default function AlertsPage() {
                 <Card
                   key={alert.id}
                   className={`cursor-pointer hover:shadow-md transition-all ${
-                    selectedAlert === alert.id ? "ring-2 ring-[#147a5e]" : ""
+                    selectedAlert === alert.id ? "ring-2 ring-[#028090]" : ""
                   } ${alert.status === "resolved" ? "opacity-70" : ""}`}
                   onClick={() => setSelectedAlert(alert.id === selectedAlert ? null : alert.id)}
                 >
@@ -229,7 +229,7 @@ export default function AlertsPage() {
                 <div className="space-y-2">
                   <label className="block text-xs font-medium text-[#64748b]">Investigation note</label>
                   <textarea
-                    className="w-full text-sm border border-[#e2e8f0] rounded-lg p-2.5 focus:outline-none focus:ring-1 focus:ring-[#147a5e] resize-none"
+                    className="w-full text-sm border border-[#e2e8f0] rounded-lg p-2.5 focus:outline-none focus:ring-1 focus:ring-[#028090] resize-none"
                     rows={3}
                     placeholder="Add a note about this alert..."
                   />

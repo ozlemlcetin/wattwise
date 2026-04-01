@@ -13,7 +13,7 @@ function Toggle({ enabled, onChange }: { enabled: boolean; onChange: () => void 
     <button
       onClick={onChange}
       className={`w-10 h-5.5 rounded-full relative transition-colors ${
-        enabled ? "bg-[#147a5e]" : "bg-[#e2e8f0]"
+        enabled ? "bg-[#028090]" : "bg-[#e2e8f0]"
       }`}
       style={{ height: 22 }}
     >
@@ -62,7 +62,7 @@ export default function SettingsPage() {
               onClick={() => setActiveTab(tab.id)}
               className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-left transition-colors ${
                 activeTab === tab.id
-                  ? "bg-[#e8f5f1] text-[#147a5e] font-medium"
+                  ? "bg-[#e8f5f1] text-[#028090] font-medium"
                   : "text-[#475569] hover:bg-[#f8fafc]"
               }`}
             >
@@ -136,7 +136,7 @@ export default function SettingsPage() {
               </CardHeader>
               <CardContent className="space-y-5">
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[#147a5e] flex items-center justify-center text-white text-xl font-bold">
+                  <div className="w-14 h-14 rounded-full bg-[#028090] flex items-center justify-center text-white text-xl font-bold">
                     OC
                   </div>
                   <div>

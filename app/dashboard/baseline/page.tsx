@@ -135,7 +135,7 @@ export default function BaselinePage() {
                 type="monotone"
                 dataKey={view === "electricity" ? "electricity" : "water"}
                 name="Actual"
-                stroke="#147a5e"
+                stroke="#028090"
                 strokeWidth={2.5}
                 dot={{ r: 3 }}
               />
@@ -150,7 +150,7 @@ export default function BaselinePage() {
         <Card>
           <CardHeader>
             <div className="flex items-center gap-2">
-              <Info className="w-4 h-4 text-[#147a5e]" />
+              <Info className="w-4 h-4 text-[#028090]" />
               <CardTitle className="text-base">Baseline assumptions</CardTitle>
             </div>
             <CardDescription>How the FairScore target was calculated for {building.name}</CardDescription>
@@ -223,7 +223,7 @@ export default function BaselinePage() {
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
             {methodologySteps.map((s) => (
               <div key={s.step} className="bg-[#f8fafc] rounded-xl p-4">
-                <div className="w-7 h-7 rounded-full bg-[#147a5e] text-white flex items-center justify-center text-xs font-bold mb-3">
+                <div className="w-7 h-7 rounded-full bg-[#028090] text-white flex items-center justify-center text-xs font-bold mb-3">
                   {s.step}
                 </div>
                 <p className="text-sm font-semibold text-[#0f172a] mb-1">{s.title}</p>
@@ -232,7 +232,7 @@ export default function BaselinePage() {
             ))}
           </div>
           <div className="mt-4 bg-[#e8f5f1] rounded-xl p-4 flex gap-3">
-            <Info className="w-4 h-4 text-[#147a5e] shrink-0 mt-0.5" />
+            <Info className="w-4 h-4 text-[#028090] shrink-0 mt-0.5" />
             <p className="text-sm text-[#0f172a]">
               <strong>Fairness and dispute reduction:</strong> Because every target is derived from the building's own historical data with explicit adjustments, residents and operators can understand why a target was set — reducing the risk of fairness disputes and improving engagement with savings programmes.
             </p>

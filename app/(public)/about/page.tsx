@@ -147,7 +147,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((member) => (
               <div key={member.role} className="bg-[#f8fafc] rounded-2xl p-8 border border-[#e2e8f0]">
-                <div className="w-14 h-14 rounded-xl bg-[#147a5e] text-white flex items-center justify-center font-bold text-lg mb-5">
+                <div className="w-14 h-14 rounded-xl bg-[#028090] text-white flex items-center justify-center font-bold text-lg mb-5">
                   {member.initials}
                 </div>
                 <div className="mb-1">
@@ -178,7 +178,7 @@ export default function AboutPage() {
       </div>
 
       {/* CTA */}
-      <div className="bg-[#147a5e] py-20 px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#028090] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Get in touch
@@ -188,7 +188,7 @@ export default function AboutPage() {
             an investor, or a potential team member — we'd like to hear from you.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-white text-[#147a5e] hover:bg-[#f0fdf9]">
+            <Button size="lg" className="bg-white text-[#028090] hover:bg-[#f0fdf9]">
               Contact Us <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>

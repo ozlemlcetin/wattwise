@@ -210,7 +210,7 @@ export default function ProductPage() {
                 <Badge variant="secondary">{mod.badge}</Badge>
               </div>
               <h2 className="text-2xl font-bold text-[#0f172a] mb-2">{mod.title}</h2>
-              <p className="text-[#147a5e] font-medium mb-4">{mod.tagline}</p>
+              <p className="text-[#028090] font-medium mb-4">{mod.tagline}</p>
               <p className="text-[#475569] leading-relaxed mb-6">{mod.description}</p>
 
               <div className="bg-[#f0fdf9] rounded-xl p-4 mb-6 border border-[#d1fae5]">
@@ -221,7 +221,7 @@ export default function ProductPage() {
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {mod.features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-sm text-[#475569]">
-                    <CheckCircle className="w-3.5 h-3.5 text-[#147a5e] shrink-0" />
+                    <CheckCircle className="w-3.5 h-3.5 text-[#028090] shrink-0" />
                     {f}
                   </li>
                 ))}
@@ -253,7 +253,7 @@ export default function ProductPage() {
                     <div key={j} className="flex items-center gap-2">
                       <div className="w-16 h-1.5 rounded-full bg-[#e2e8f0]">
                         <div
-                          className="h-1.5 rounded-full bg-[#147a5e]"
+                          className="h-1.5 rounded-full bg-[#028090]"
                           style={{ width: `${w}%` }}
                         />
                       </div>

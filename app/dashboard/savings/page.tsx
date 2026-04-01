@@ -113,8 +113,8 @@ export default function SavingsPage() {
           onClick={() => setView("electricity")}
           className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
             view === "electricity"
-              ? "bg-[#147a5e] text-white border-[#147a5e]"
-              : "bg-white text-[#475569] border-[#e2e8f0] hover:border-[#147a5e]"
+              ? "bg-[#028090] text-white border-[#028090]"
+              : "bg-white text-[#475569] border-[#e2e8f0] hover:border-[#028090]"
           }`}
         >
           <Zap className="w-4 h-4" /> Electricity (kWh)
@@ -161,8 +161,8 @@ export default function SavingsPage() {
               <AreaChart data={savingsData}>
                 <defs>
                   <linearGradient id="aGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#147a5e" stopOpacity={0.2} />
-                    <stop offset="95%" stopColor="#147a5e" stopOpacity={0} />
+                    <stop offset="5%" stopColor="#028090" stopOpacity={0.2} />
+                    <stop offset="95%" stopColor="#028090" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
@@ -183,7 +183,7 @@ export default function SavingsPage() {
                   type="monotone"
                   dataKey="actual"
                   name="Actual"
-                  stroke="#147a5e"
+                  stroke="#028090"
                   fill="url(#aGrad)"
                   strokeWidth={2}
                 />
@@ -213,7 +213,7 @@ export default function SavingsPage() {
                 <Bar
                   dataKey="pct"
                   name="% savings"
-                  fill="#147a5e"
+                  fill="#028090"
                   radius={[4, 4, 0, 0]}
                 />
               </BarChart>

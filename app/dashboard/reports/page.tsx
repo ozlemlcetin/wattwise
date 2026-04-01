@@ -76,7 +76,7 @@ export default function ReportsPage() {
             <Card
               key={report.id}
               className={`cursor-pointer hover:shadow-md transition-all ${
-                preview === report.id ? "ring-2 ring-[#147a5e]" : ""
+                preview === report.id ? "ring-2 ring-[#028090]" : ""
               } ${report.status !== "ready" ? "opacity-70" : ""}`}
               onClick={() => report.status === "ready" && setPreview(report.id)}
             >
@@ -114,7 +114,7 @@ export default function ReportsPage() {
                             </span>
                           )}
                           {report.savingsCO2 && (
-                            <span className="text-xs text-[#147a5e] font-medium">
+                            <span className="text-xs text-[#028090] font-medium">
                               🌱 {report.savingsCO2} tCO₂e
                             </span>
                           )}
@@ -166,7 +166,7 @@ export default function ReportsPage() {
                 {/* Mini report preview */}
                 <div className="bg-[#f8fafc] rounded-xl p-4 border border-[#e2e8f0]">
                   <div className="flex items-center gap-2 mb-4">
-                    <div className="w-6 h-6 bg-[#147a5e] rounded flex items-center justify-center">
+                    <div className="w-6 h-6 bg-[#028090] rounded flex items-center justify-center">
                       <Zap className="w-3 h-3 text-white" />
                     </div>
                     <span className="text-xs font-bold text-[#0f172a]">WattWise Report</span>
@@ -188,7 +188,7 @@ export default function ReportsPage() {
                       {previewReport.savingsCO2 && (
                         <div className="flex justify-between text-sm">
                           <span className="text-[#64748b]">CO₂e reduction (est.)</span>
-                          <span className="font-semibold text-[#147a5e]">{previewReport.savingsCO2} tCO₂e</span>
+                          <span className="font-semibold text-[#028090]">{previewReport.savingsCO2} tCO₂e</span>
                         </div>
                       )}
                       <div className="border-t border-[#e2e8f0] pt-3">

@@ -48,7 +48,7 @@ export default function DashboardHeader() {
       </button>
 
       {/* Avatar */}
-      <div className="w-8 h-8 rounded-full bg-[#147a5e] flex items-center justify-center text-white text-xs font-bold">
+      <div className="w-8 h-8 rounded-full bg-[#028090] flex items-center justify-center text-white text-xs font-bold">
         OC
       </div>
     </header>

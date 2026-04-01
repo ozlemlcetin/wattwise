@@ -70,7 +70,7 @@ export default function UploadPage() {
         <div className="lg:col-span-2 space-y-5">
           {/* Instructions banner */}
           <div className="bg-[#e8f5f1] border border-[#d1fae5] rounded-xl p-4 flex gap-3">
-            <Info className="w-5 h-5 text-[#147a5e] shrink-0 mt-0.5" />
+            <Info className="w-5 h-5 text-[#028090] shrink-0 mt-0.5" />
             <div>
               <p className="text-sm font-medium text-[#0f172a] mb-1">No hardware required</p>
               <p className="text-sm text-[#475569]">
@@ -125,8 +125,8 @@ export default function UploadPage() {
                 <div
                   className={`border-2 border-dashed rounded-xl p-12 text-center transition-colors ${
                     state === "dragging"
-                      ? "border-[#147a5e] bg-[#e8f5f1]"
-                      : "border-[#e2e8f0] hover:border-[#147a5e] hover:bg-[#f0fdf9]"
+                      ? "border-[#028090] bg-[#e8f5f1]"
+                      : "border-[#e2e8f0] hover:border-[#028090] hover:bg-[#f0fdf9]"
                   }`}
                   onDragOver={(e) => { e.preventDefault(); setState("dragging"); }}
                   onDragLeave={() => setState("idle")}
@@ -154,12 +154,12 @@ export default function UploadPage() {
               ) : state === "uploading" ? (
                 <div className="p-12 text-center">
                   <div className="w-14 h-14 bg-[#e8f5f1] rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
-                    <Upload className="w-6 h-6 text-[#147a5e]" />
+                    <Upload className="w-6 h-6 text-[#028090]" />
                   </div>
                   <p className="font-medium text-[#0f172a] mb-2">Processing upload...</p>
                   <p className="text-sm text-[#64748b]">Validating rows and mapping columns</p>
                   <div className="w-48 h-1.5 bg-[#e2e8f0] rounded-full mx-auto mt-6 overflow-hidden">
-                    <div className="h-full bg-[#147a5e] rounded-full animate-pulse" style={{ width: "60%" }} />
+                    <div className="h-full bg-[#028090] rounded-full animate-pulse" style={{ width: "60%" }} />
                   </div>
                 </div>
               ) : state === "success" ? (
@@ -201,7 +201,7 @@ export default function UploadPage() {
           {/* Template download */}
           <div className="bg-[#f8fafc] rounded-xl border border-[#e2e8f0] p-4 flex items-center gap-4">
             <div className="w-10 h-10 bg-white rounded-lg border border-[#e2e8f0] flex items-center justify-center">
-              <FileSpreadsheet className="w-5 h-5 text-[#147a5e]" />
+              <FileSpreadsheet className="w-5 h-5 text-[#028090]" />
             </div>
             <div className="flex-1">
               <p className="text-sm font-medium text-[#0f172a]">WattWise import template</p>

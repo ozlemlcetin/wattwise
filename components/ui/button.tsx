@@ -15,16 +15,16 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variants = {
       default:
-        "bg-[#147a5e] text-white hover:bg-[#0f5c47] focus-visible:ring-[#147a5e]",
+        "bg-[#028090] text-white hover:bg-[#0f5c47] focus-visible:ring-[#028090]",
       outline:
-        "border border-[#e2e8f0] bg-white text-[#0f172a] hover:bg-[#f8fafc] focus-visible:ring-[#147a5e]",
+        "border border-[#e2e8f0] bg-white text-[#0f172a] hover:bg-[#f8fafc] focus-visible:ring-[#028090]",
       ghost:
-        "text-[#0f172a] hover:bg-[#f8fafc] focus-visible:ring-[#147a5e]",
+        "text-[#0f172a] hover:bg-[#f8fafc] focus-visible:ring-[#028090]",
       destructive:
         "bg-red-500 text-white hover:bg-red-600 focus-visible:ring-red-500",
       secondary:
-        "bg-[#f1f5f9] text-[#0f172a] hover:bg-[#e2e8f0] focus-visible:ring-[#147a5e]",
-      link: "text-[#147a5e] underline-offset-4 hover:underline focus-visible:ring-[#147a5e]",
+        "bg-[#f1f5f9] text-[#0f172a] hover:bg-[#e2e8f0] focus-visible:ring-[#028090]",
+      link: "text-[#028090] underline-offset-4 hover:underline focus-visible:ring-[#028090]",
     };
 
     const sizes = {

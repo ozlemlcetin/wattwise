@@ -136,8 +136,8 @@ export default function DashboardPage() {
                     <stop offset="95%" stopColor="#94a3b8" stopOpacity={0} />
                   </linearGradient>
                   <linearGradient id="actualGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#147a5e" stopOpacity={0.2} />
-                    <stop offset="95%" stopColor="#147a5e" stopOpacity={0} />
+                    <stop offset="5%" stopColor="#028090" stopOpacity={0.2} />
+                    <stop offset="95%" stopColor="#028090" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
@@ -160,7 +160,7 @@ export default function DashboardPage() {
                   type="monotone"
                   dataKey="electricity"
                   name="Actual"
-                  stroke="#147a5e"
+                  stroke="#028090"
                   fill="url(#actualGrad)"
                   strokeWidth={2}
                 />

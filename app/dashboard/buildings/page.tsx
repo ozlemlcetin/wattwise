@@ -71,7 +71,7 @@ export default function BuildingsPage() {
             <Card
               key={building.id}
               className={`cursor-pointer hover:shadow-md transition-all ${
-                selected === building.id ? "ring-2 ring-[#147a5e]" : ""
+                selected === building.id ? "ring-2 ring-[#028090]" : ""
               }`}
               onClick={() => setSelected(building.id === selected ? null : building.id)}
             >
@@ -79,7 +79,7 @@ export default function BuildingsPage() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-4 flex-1 min-w-0">
                     <div className="w-10 h-10 bg-[#e8f5f1] rounded-xl flex items-center justify-center shrink-0">
-                      <Building2 className="w-5 h-5 text-[#147a5e]" />
+                      <Building2 className="w-5 h-5 text-[#028090]" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">

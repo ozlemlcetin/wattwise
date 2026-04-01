@@ -45,7 +45,7 @@ export default function DashboardSidebar() {
     >
       {/* Logo */}
       <div className={cn("flex items-center gap-2.5 px-4 h-16 border-b border-[#1e293b]", collapsed && "justify-center px-0")}>
-        <div className="w-8 h-8 bg-[#147a5e] rounded-lg flex items-center justify-center shrink-0">
+        <div className="w-8 h-8 bg-[#028090] rounded-lg flex items-center justify-center shrink-0">
           <Zap className="w-4 h-4 text-white" />
         </div>
         {!collapsed && (
@@ -77,7 +77,7 @@ export default function DashboardSidebar() {
                 "flex items-center gap-3 px-4 py-2.5 text-sm transition-colors relative",
                 collapsed ? "justify-center px-0" : "",
                 isActive
-                  ? "bg-[#147a5e]/20 text-white border-r-2 border-[#147a5e]"
+                  ? "bg-[#028090]/20 text-white border-r-2 border-[#028090]"
                   : "text-[#94a3b8] hover:bg-[#1e293b] hover:text-white"
               )}
               title={collapsed ? item.label : undefined}

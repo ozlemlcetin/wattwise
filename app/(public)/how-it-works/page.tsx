@@ -118,13 +118,13 @@ export default function HowItWorksPage() {
             )}
             <div className="flex gap-8">
               <div className="shrink-0">
-                <div className="w-12 h-12 rounded-full bg-[#147a5e] text-white flex items-center justify-center font-bold relative z-10">
+                <div className="w-12 h-12 rounded-full bg-[#028090] text-white flex items-center justify-center font-bold relative z-10">
                   {step.num}
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <step.icon className="w-5 h-5 text-[#147a5e]" />
+                  <step.icon className="w-5 h-5 text-[#028090]" />
                   <span className="flex items-center gap-1.5 text-xs text-[#64748b]">
                     <Clock className="w-3 h-3" />
                     {step.duration}
@@ -136,7 +136,7 @@ export default function HowItWorksPage() {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
                   {step.details.map((d) => (
                     <li key={d} className="flex items-center gap-2 text-sm text-[#475569]">
-                      <CheckCircle className="w-3.5 h-3.5 text-[#147a5e] shrink-0" />
+                      <CheckCircle className="w-3.5 h-3.5 text-[#028090] shrink-0" />
                       {d}
                     </li>
                   ))}

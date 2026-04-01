@@ -40,7 +40,7 @@ export default function TermsPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="mb-10">
-        <p className="text-sm text-[#147a5e] font-medium mb-2">Legal</p>
+        <p className="text-sm text-[#028090] font-medium mb-2">Legal</p>
         <h1 className="text-3xl font-bold text-[#0f172a] mb-4">Terms of Service</h1>
         <p className="text-[#64748b] text-sm">Last updated: March 2026 · MVP stage — these terms will be updated prior to commercial launch.</p>
       </div>
@@ -62,11 +62,11 @@ export default function TermsPage() {
 
       <div className="mt-14 pt-8 border-t border-[#e2e8f0] text-sm text-[#64748b]">
         Questions about these terms? Contact us at{" "}
-        <a href="mailto:hello@wattwise.app" className="text-[#147a5e] hover:underline">
+        <a href="mailto:hello@wattwise.app" className="text-[#028090] hover:underline">
           hello@wattwise.app
         </a>{" "}
         or visit our{" "}
-        <Link href="/contact" className="text-[#147a5e] hover:underline">
+        <Link href="/contact" className="text-[#028090] hover:underline">
           contact page
         </Link>
         .

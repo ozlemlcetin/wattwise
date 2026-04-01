@@ -28,7 +28,7 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#147a5e] rounded-xl flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#028090] rounded-xl flex items-center justify-center">
               <Zap className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold text-[#0f172a]">WattWise</span>
@@ -67,7 +67,7 @@ export default function LoginPage() {
                 <label className="block text-sm font-medium text-[#0f172a]">
                   Password
                 </label>
-                <button type="button" className="text-xs text-[#147a5e] hover:underline">
+                <button type="button" className="text-xs text-[#028090] hover:underline">
                   Forgot password?
                 </button>
               </div>
@@ -98,7 +98,7 @@ export default function LoginPage() {
 
         <p className="text-center text-sm text-[#64748b] mt-6">
           Don't have access yet?{" "}
-          <Link href="/contact" className="text-[#147a5e] hover:underline font-medium">
+          <Link href="/contact" className="text-[#028090] hover:underline font-medium">
             Book a demo
           </Link>
         </p>
