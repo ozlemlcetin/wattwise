@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const plans = [
   {
     name: "Pilot",
-    price: "From £2,400",
+    price: "From 3,000 TL",
     period: "/ year",
     description: "Ideal for validating WattWise with 1–2 buildings before wider rollout.",
     badge: null,
@@ -29,7 +29,7 @@ const plans = [
   },
   {
     name: "Portfolio",
-    price: "From £6,500",
+    price: "From 6,000 TL",
     period: "/ year",
     description: "For operators managing 3–10 buildings who need portfolio-level visibility and reporting.",
     badge: "Most Popular",
@@ -72,7 +72,7 @@ const plans = [
 const roiInputs = [
   { label: "Number of buildings", key: "buildings", default: 3, min: 1, max: 20 },
   { label: "Total units / rooms", key: "units", default: 200, min: 10, max: 2000 },
-  { label: "Annual utility spend (£)", key: "spend", default: 120000, min: 10000, max: 2000000 },
+  { label: "Annual utility spend (TL)", key: "spend", default: 120000, min: 10000, max: 2000000 },
 ];
 
 export default function PricingPage() {
@@ -82,7 +82,7 @@ export default function PricingPage() {
 
   const conservativeSavings = spend * 0.06;
   const targetSavings = spend * 0.11;
-  const estimatedFee = buildings <= 2 ? 2400 : buildings <= 10 ? 6500 : 15000;
+  const estimatedFee = buildings <= 2 ? 3000 : buildings <= 10 ? 6000 : 15000;
   const conservativeNet = conservativeSavings - estimatedFee;
   const targetNet = targetSavings - estimatedFee;
 
@@ -203,7 +203,7 @@ export default function PricingPage() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-[#0f172a] mb-2">
-                  Annual utility spend: <span className="text-[#147a5e] font-bold">£{spend.toLocaleString()}</span>
+                  Annual utility spend: <span className="text-[#147a5e] font-bold">{spend.toLocaleString()} TL</span>
                 </label>
                 <input
                   type="range"
@@ -232,16 +232,16 @@ export default function PricingPage() {
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
                       <span className="text-[#64748b]">Estimated annual savings</span>
-                      <span className="font-semibold text-emerald-600">£{conservativeSavings.toLocaleString(undefined, {maximumFractionDigits: 0})}</span>
+                      <span className="font-semibold text-emerald-600">{conservativeSavings.toLocaleString(undefined, {maximumFractionDigits: 0})} TL</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-[#64748b]">Illustrative platform fee</span>
-                      <span className="font-semibold text-[#0f172a]">£{estimatedFee.toLocaleString()}</span>
+                      <span className="font-semibold text-[#0f172a]">{estimatedFee.toLocaleString()} TL</span>
                     </div>
                     <div className="flex justify-between text-sm border-t border-[#e2e8f0] pt-2 mt-2">
                       <span className="font-medium text-[#0f172a]">Illustrative net value</span>
                       <span className={`font-bold ${conservativeNet >= 0 ? "text-emerald-600" : "text-red-500"}`}>
-                        £{conservativeNet.toLocaleString(undefined, {maximumFractionDigits: 0})}
+                        {conservativeNet.toLocaleString(undefined, {maximumFractionDigits: 0})} TL
                       </span>
                     </div>
                   </div>
@@ -256,16 +256,16 @@ export default function PricingPage() {
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
                       <span className="text-[#64748b]">Estimated annual savings</span>
-                      <span className="font-semibold text-emerald-600">£{targetSavings.toLocaleString(undefined, {maximumFractionDigits: 0})}</span>
+                      <span className="font-semibold text-emerald-600">{targetSavings.toLocaleString(undefined, {maximumFractionDigits: 0})} TL</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-[#64748b]">Illustrative platform fee</span>
-                      <span className="font-semibold text-[#0f172a]">£{estimatedFee.toLocaleString()}</span>
+                      <span className="font-semibold text-[#0f172a]">{estimatedFee.toLocaleString()} TL</span>
                     </div>
                     <div className="flex justify-between text-sm border-t border-[#e2e8f0] pt-2 mt-2">
                       <span className="font-medium text-[#0f172a]">Illustrative net value</span>
                       <span className={`font-bold ${targetNet >= 0 ? "text-emerald-600" : "text-red-500"}`}>
-                        £{targetNet.toLocaleString(undefined, {maximumFractionDigits: 0})}
+                        {targetNet.toLocaleString(undefined, {maximumFractionDigits: 0})} TL
                       </span>
                     </div>
                   </div>

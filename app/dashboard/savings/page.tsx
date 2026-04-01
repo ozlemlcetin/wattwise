@@ -67,7 +67,7 @@ export default function SavingsPage() {
     },
     {
       label: "Estimated cost saving",
-      value: view === "electricity" ? "£6,480" : "£520",
+      value: view === "electricity" ? "6,480 TL" : "520 TL",
       sub: "Illustrative @ avg tariff rate",
       color: "text-teal-600",
       bg: "bg-teal-50",
