@@ -15,7 +15,7 @@ const team = [
   },
   {
     initials: "AR",
-    name: "AI / Data Lead",
+    name: "Beyza",
     role: "Baseline Engine & Data Science",
     focus: "FairScore methodology, Python analytics, anomaly detection",
     icon: Code,
@@ -23,7 +23,7 @@ const team = [
   },
   {
     initials: "UX",
-    name: "Engineering & UX",
+    name: "Elif",
     role: "Frontend Architecture & UX Design",
     focus: "Operator dashboard, data visualisation, onboarding experience",
     icon: Target,
