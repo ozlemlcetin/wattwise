@@ -217,9 +217,6 @@ export default function ReportsPage() {
                   <Button className="w-full" size="sm">
                     <Download className="w-4 h-4" /> Download PDF
                   </Button>
-                  <Button variant="outline" className="w-full" size="sm">
-                    <Download className="w-4 h-4" /> Export CSV
-                  </Button>
                 </div>
               </CardContent>
             </Card>

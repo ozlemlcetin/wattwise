@@ -21,23 +21,23 @@ type UploadState = "idle" | "dragging" | "uploading" | "success" | "error";
 const commonIssues = [
   {
     icon: AlertTriangle,
-    issue: "Missing date column",
-    fix: "Ensure your file includes a 'Date' column in YYYY-MM-DD format.",
+    issue: "Bill period not detected",
+    fix: "Ensure the bill period (month/year) is visible on the document. WattWise uses this to assign data to the correct baseline window.",
   },
   {
     icon: AlertTriangle,
-    issue: "Unrecognised column headers",
-    fix: "Use the downloadable template to ensure column names match the expected format.",
+    issue: "Consumption values missing",
+    fix: "The bill must include electricity (kWh) and/or water (m³) consumption totals. Check that the bill is a full billing statement, not a summary.",
   },
   {
     icon: AlertTriangle,
-    issue: "Mixed units",
-    fix: "All electricity values should be in kWh, water values in m³. Specify unit in the upload form.",
+    issue: "Unrecognised bill format",
+    fix: "Use the bill format guide to confirm your provider's format is supported. Contact support to add a new provider format.",
   },
   {
     icon: Info,
-    issue: "Partial import",
-    fix: "WattWise imports valid rows and reports skipped rows with reasons. You can re-upload corrected rows.",
+    issue: "Partial data extracted",
+    fix: "WattWise imports all detected fields and reports unrecognised sections. You can review and re-upload if needed.",
   },
 ];
 
@@ -59,9 +59,9 @@ export default function UploadPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-[#0f172a]">Data Upload</h1>
+        <h1 className="text-2xl font-bold text-[#0f172a]">Bill Upload</h1>
         <p className="text-sm text-[#64748b] mt-1">
-          Upload CSV or Excel utility data exports for processing and baseline analysis.
+          Upload electronic utility bills for processing and baseline analysis.
         </p>
       </div>
 
@@ -74,7 +74,7 @@ export default function UploadPage() {
             <div>
               <p className="text-sm font-medium text-[#0f172a] mb-1">No hardware required</p>
               <p className="text-sm text-[#475569]">
-                Export your utility data from your metering system or billing provider as a CSV or Excel file, then upload here. WattWise validates and maps records automatically.
+                Upload the electronic utility bills (e-bill / e-invoice) you receive from your billing provider. WattWise reads the consumption data, validates, and maps records automatically.
               </p>
             </div>
           </div>
@@ -134,15 +134,15 @@ export default function UploadPage() {
                 >
                   <Upload className="w-10 h-10 text-[#94a3b8] mx-auto mb-4" />
                   <p className="text-[#0f172a] font-medium mb-1">
-                    Drop your CSV or Excel file here
+                    Drop your utility bill here
                   </p>
                   <p className="text-sm text-[#64748b] mb-6">
-                    Supported: .csv, .xlsx — max 25 MB
+                    Supported: .pdf, .xml, .xlsx — max 25 MB
                   </p>
                   <label className="cursor-pointer">
                     <input
                       type="file"
-                      accept=".csv,.xlsx"
+                      accept=".pdf,.xml,.xlsx"
                       className="hidden"
                       onChange={handleFileChange}
                     />
@@ -175,11 +175,11 @@ export default function UploadPage() {
                   </div>
                   <div className="bg-[#f8fafc] rounded-xl p-4 space-y-2 mb-5">
                     {[
-                      { label: "File", value: "march2026_data.csv" },
+                      { label: "Bill", value: "fatura_mart2026_00481.pdf" },
                       { label: "Building", value: building || "Bosphorus Student House" },
                       { label: "Period", value: "March 2026" },
-                      { label: "Rows imported", value: "280" },
-                      { label: "Rows skipped", value: "0" },
+                      { label: "Records imported", value: "280" },
+                      { label: "Records skipped", value: "0" },
                     ].map((r) => (
                       <div key={r.label} className="flex justify-between text-sm">
                         <span className="text-[#64748b]">{r.label}</span>
@@ -204,8 +204,8 @@ export default function UploadPage() {
               <FileSpreadsheet className="w-5 h-5 text-[#028090]" />
             </div>
             <div className="flex-1">
-              <p className="text-sm font-medium text-[#0f172a]">WattWise import template</p>
-              <p className="text-xs text-[#64748b]">Includes all required columns with example data</p>
+              <p className="text-sm font-medium text-[#0f172a]">WattWise bill format guide</p>
+              <p className="text-xs text-[#64748b]">Supported bill formats and field mapping reference</p>
             </div>
             <Button variant="outline" size="sm">
               <Download className="w-4 h-4" />

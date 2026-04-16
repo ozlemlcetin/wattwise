@@ -60,7 +60,7 @@ const useCases = [
     benefits: [
       "Occupancy-normalised baselines account for seasonal swings",
       "Anomaly alerts based on adjusted baseline, not raw figures",
-      "Simple CSV upload fits existing admin workflows",
+      "Simple bill upload fits existing admin workflows",
       "No IT resources or technical staff required",
       "Monthly reporting without manual assembly",
       "Pilot-ready — start with a single property",

@@ -26,11 +26,11 @@ import { Badge } from "@/components/ui/badge";
 const faqs = [
   {
     q: "Does WattWise require hardware installation?",
-    a: "No. WattWise is explicitly hardware-free. Operators upload existing utility data (CSV or Excel exports from your current billing or metering system) and the platform handles the rest. There is no sensor installation, no IoT procurement, and no infrastructure requirement.",
+    a: "No. WattWise is explicitly hardware-free. Operators upload their existing utility bills (electronic bills received from your billing or metering provider) and the platform handles the rest. There is no sensor installation, no IoT procurement, and no infrastructure requirement.",
   },
   {
     q: "What data do I need to get started?",
-    a: "Ideally, 12–24 months of building-level electricity and/or water consumption data in CSV or Excel format. This allows WattWise to build a fair seasonal baseline. Operators with less history can still get started — the baseline refines over time.",
+    a: "Ideally, 12–24 months of building-level electricity and/or water utility bills. This allows WattWise to build a fair seasonal baseline. Operators with less history can still get started — the baseline refines over time.",
   },
   {
     q: "What is FairScore and why does it matter?",
@@ -46,13 +46,13 @@ const faqs = [
   },
   {
     q: "Can WattWise integrate with our existing billing or ERP systems?",
-    a: "In the current MVP, data is uploaded via CSV/Excel. Direct integrations with billing or ERP systems are on the product roadmap and can be scoped as part of a custom pilot agreement.",
+    a: "In the current MVP, data is uploaded via electronic bills (e-bill / e-invoice formats). Direct integrations with billing or ERP systems are on the product roadmap and can be scoped as part of a custom pilot agreement.",
   },
 ];
 
 const trustItems = [
   "Hardware-free deployment",
-  "CSV / Excel onboarding",
+  "Bill upload onboarding",
   "Explainable FairScore baselines",
   "Monthly operator reports",
   "Anomaly monitoring built-in",
@@ -62,8 +62,8 @@ const trustItems = [
 const modules = [
   {
     icon: Upload,
-    title: "Data Ingestion",
-    desc: "Upload CSV or Excel exports from your existing metering or billing system. No new hardware needed.",
+    title: "Bill Upload",
+    desc: "Upload electronic utility bills received from your metering or billing provider. No new hardware needed.",
     color: "bg-blue-50 text-blue-600",
   },
   {
@@ -101,8 +101,8 @@ const modules = [
 const steps = [
   {
     num: "01",
-    title: "Upload your existing utility data",
-    desc: "Export data from your current meter or billing system and upload as CSV or Excel. WattWise validates, maps, and ingests the records automatically.",
+    title: "Upload your utility bills",
+    desc: "Upload the electronic utility bills you receive from your billing provider. WattWise reads, validates, and ingests the consumption data automatically.",
   },
   {
     num: "02",
@@ -165,8 +165,8 @@ export default function HomePage() {
               <span className="text-[#028090]">without installing hardware.</span>
             </h1>
             <p className="text-lg sm:text-xl text-[#475569] leading-relaxed mb-8 max-w-2xl">
-              WattWise helps dormitory and accommodation operators upload existing
-              utility data, set fair savings baselines, monitor anomalies, and
+              WattWise helps dormitory and accommodation operators upload utility
+              bills, set fair savings baselines, monitor anomalies, and
               generate operator-ready sustainability reports — through a simple
               browser-based platform.
             </p>
@@ -198,32 +198,79 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Dashboard preview card */}
-          <div className="mt-16 rounded-2xl border border-[#e2e8f0] bg-white shadow-xl overflow-hidden">
-            <div className="bg-[#0f172a] px-6 py-3 flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-red-400"></div>
-              <div className="w-3 h-3 rounded-full bg-amber-400"></div>
-              <div className="w-3 h-3 rounded-full bg-emerald-400"></div>
-              <span className="ml-4 text-xs text-[#64748b] font-mono">
-                wattwise.app/dashboard
-              </span>
-            </div>
-            <div className="p-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { label: "Portfolio Savings YTD", value: "−9.3%", sub: "vs. FairScore baseline", icon: TrendingDown, color: "text-emerald-600" },
-                { label: "Electricity Saved", value: "38,200 kWh", sub: "Jan–Mar 2026", icon: Zap, color: "text-blue-600" },
-                { label: "Water Saved", value: "1,060 m³", sub: "Jan–Mar 2026", icon: Droplets, color: "text-cyan-600" },
-                { label: "Open Alerts", value: "3", sub: "2 buildings affected", icon: Bell, color: "text-amber-600" },
-              ].map((stat) => (
-                <div key={stat.label} className="bg-[#f8fafc] rounded-xl p-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <stat.icon className={`w-4 h-4 ${stat.color}`} />
-                    <span className="text-xs text-[#64748b] font-medium">{stat.label}</span>
+          {/* Bill upload demo */}
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Sample bill */}
+            <div className="rounded-2xl border border-[#e2e8f0] bg-white shadow-xl overflow-hidden">
+              <div className="bg-[#0f172a] px-6 py-3 flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                <div className="w-3 h-3 rounded-full bg-amber-400"></div>
+                <div className="w-3 h-3 rounded-full bg-emerald-400"></div>
+                <span className="ml-4 text-xs text-[#64748b] font-mono">
+                  Örnek Elektronik Fatura · Sample Bill
+                </span>
+              </div>
+              <div className="p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <p className="text-xs text-[#64748b] uppercase tracking-wide mb-1">Elektrik Faturası</p>
+                    <p className="font-bold text-[#0f172a] text-lg">ITU North Dorm A</p>
+                    <p className="text-xs text-[#64748b]">Fatura No: 2026-MAR-00481</p>
                   </div>
-                  <div className={`text-xl font-bold ${stat.color}`}>{stat.value}</div>
-                  <div className="text-xs text-[#94a3b8] mt-0.5">{stat.sub}</div>
+                  <div className="text-right">
+                    <p className="text-xs text-[#64748b]">Dönem</p>
+                    <p className="font-semibold text-[#0f172a]">Mart 2026</p>
+                  </div>
                 </div>
-              ))}
+                <div className="border-t border-[#e2e8f0] pt-4 space-y-2 mb-4">
+                  {[
+                    { label: "Tüketim (Electricity)", value: "38,100 kWh" },
+                    { label: "Su Tüketimi (Water)", value: "1,105 m³" },
+                    { label: "Abone No", value: "TR-48201-A" },
+                    { label: "Bina / Blok", value: "ITU North Dorm A" },
+                  ].map((row) => (
+                    <div key={row.label} className="flex justify-between text-sm">
+                      <span className="text-[#64748b]">{row.label}</span>
+                      <span className="font-medium text-[#0f172a]">{row.value}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="bg-[#f0fdf9] rounded-xl px-4 py-3 flex items-center gap-3">
+                  <CheckCircle className="w-4 h-4 text-[#028090] shrink-0" />
+                  <p className="text-xs text-[#028090] font-medium">
+                    WattWise bu faturayı otomatik olarak okur ve baseline ile karşılaştırır.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Dashboard result */}
+            <div className="rounded-2xl border border-[#e2e8f0] bg-white shadow-xl overflow-hidden">
+              <div className="bg-[#0f172a] px-6 py-3 flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                <div className="w-3 h-3 rounded-full bg-amber-400"></div>
+                <div className="w-3 h-3 rounded-full bg-emerald-400"></div>
+                <span className="ml-4 text-xs text-[#64748b] font-mono">
+                  wattwise.app/dashboard
+                </span>
+              </div>
+              <div className="p-6 grid grid-cols-2 gap-4">
+                {[
+                  { label: "Portfolio Savings YTD", value: "−9.3%", sub: "vs. FairScore baseline", icon: TrendingDown, color: "text-emerald-600" },
+                  { label: "Electricity Saved", value: "38,200 kWh", sub: "Jan–Mar 2026", icon: Zap, color: "text-blue-600" },
+                  { label: "Water Saved", value: "1,060 m³", sub: "Jan–Mar 2026", icon: Droplets, color: "text-cyan-600" },
+                  { label: "Open Alerts", value: "3", sub: "2 buildings affected", icon: Bell, color: "text-amber-600" },
+                ].map((stat) => (
+                  <div key={stat.label} className="bg-[#f8fafc] rounded-xl p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <stat.icon className={`w-4 h-4 ${stat.color}`} />
+                      <span className="text-xs text-[#64748b] font-medium">{stat.label}</span>
+                    </div>
+                    <div className={`text-xl font-bold ${stat.color}`}>{stat.value}</div>
+                    <div className="text-xs text-[#94a3b8] mt-0.5">{stat.sub}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -416,7 +463,7 @@ export default function HomePage() {
                   "Estimated CO₂-equivalent reduction",
                   "Building and portfolio-level breakdowns",
                   "Anomaly and alert summary included",
-                  "Export-ready PDF and CSV formats",
+                  "Export-ready PDF formats",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm text-[#cbd5e1]">
                     <CheckCircle className="w-4 h-4 text-[#028090] shrink-0" />

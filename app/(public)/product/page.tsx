@@ -24,22 +24,22 @@ const modules = [
     color: "bg-blue-50 text-blue-600",
     badge: "Step 1",
     description:
-      "Upload your existing electricity and water data as CSV or Excel exports. WattWise accepts standard billing exports and meter data formats, validates your records on upload, and maps them to a structured timeline for baseline and savings analysis.",
+      "Upload the electronic utility bills you receive from your billing provider. WattWise accepts standard e-bill and e-invoice formats, reads consumption data automatically on upload, and maps it to a structured timeline for baseline and savings analysis.",
     operatorValue:
-      "No new software integrations. No hardware. If you can export a spreadsheet, you can onboard to WattWise.",
+      "No new software integrations. No hardware. If you receive an electronic utility bill, you can onboard to WattWise.",
     features: [
-      "CSV and Excel (.xlsx) upload",
+      "PDF, XML, and Excel (.xlsx) bill upload",
       "Auto-validation and error flagging",
-      "Downloadable sample template",
+      "Bill format guide available",
       "Upload history and status tracking",
-      "Partial import handling with issue log",
-      "Data period and building mapping",
+      "Partial extraction handling with issue log",
+      "Bill period and building mapping",
     ],
     preview: [
-      { label: "File format", value: "CSV / Excel" },
+      { label: "Accepted formats", value: "PDF, XML, Excel" },
       { label: "Typical import time", value: "< 2 minutes" },
       { label: "Validation", value: "Automatic" },
-      { label: "Template available", value: "Yes, downloadable" },
+      { label: "Format guide", value: "Yes, downloadable" },
     ],
   },
   {
@@ -91,7 +91,7 @@ const modules = [
       { label: "Utility types", value: "Electricity + Water" },
       { label: "View modes", value: "Monthly / YTD / YoY" },
       { label: "Building filter", value: "Yes" },
-      { label: "Export", value: "CSV" },
+      { label: "Export", value: "PDF" },
     ],
   },
   {
@@ -154,7 +154,7 @@ const modules = [
     color: "bg-teal-50 text-teal-600",
     badge: "Reporting",
     description:
-      "WattWise generates monthly, quarterly, and annual summaries for building and portfolio level. ESG-style outputs include kWh savings, m³ water savings, estimated CO₂-equivalent reduction, and anomaly/alert summaries. Reports are exportable as PDF or CSV for operator records and stakeholder updates.",
+      "WattWise generates monthly, quarterly, and annual summaries for building and portfolio level. ESG-style outputs include kWh savings, m³ water savings, estimated CO₂-equivalent reduction, and anomaly/alert summaries. Reports are exportable as PDF for operator records and stakeholder updates.",
     operatorValue:
       "Structured reporting without spreadsheet assembly. Suitable for internal stakeholder communication, university sustainability tracking, and ESG documentation.",
     features: [
@@ -162,13 +162,13 @@ const modules = [
       "Building and portfolio-level summaries",
       "kWh, m³, and CO₂e savings figures",
       "Anomaly and alert summary included",
-      "PDF and CSV export",
+      "PDF export",
       "Report history and regeneration",
     ],
     preview: [
       { label: "Report types", value: "Monthly / Quarterly / Annual / ESG" },
       { label: "CO₂ estimation", value: "Grid factor applied" },
-      { label: "Export formats", value: "PDF, CSV" },
+      { label: "Export formats", value: "PDF" },
       { label: "Generation", value: "On-demand + scheduled" },
     ],
   },
